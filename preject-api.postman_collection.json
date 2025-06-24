@@ -1,0 +1,400 @@
+{
+	"info": {
+		"_postman_id": "54d331fe-a767-43e7-b546-8a54419cc481",
+		"name": "preject-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45206720",
+		"_collection_link": "https://leandro-4889172.postman.co/workspace/Leandro's-Workspace~1c9452ca-03a8-4798-8fec-91cd738e26d7/collection/45206720-54d331fe-a767-43e7-b546-8a54419cc481?action=share&source=collection_link&creator=45206720"
+	},
+	"item": [
+		{
+			"name": "Funcionario",
+			"item": [
+				{
+					"name": "listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/funcionarios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"funcionarios"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "ok",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/funcionarios",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"funcionarios"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 24 Jun 2025 19:32:27 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 3,\n        \"nome\": \"Leandro Medrado Meireles\",\n        \"cpf\": \"12345678911\",\n        \"email\": \"teste@gmail.com\",\n        \"salario\": 3500.75,\n        \"projetos\": []\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "criar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Leandro Medrado Meireles\",\r\n    \"cpf\": \"12345678911\",\r\n    \"email\": \"teste@gmail.com\",\r\n    \"salario\":  3500.75\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/funcionarios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"funcionarios"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "ok",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nome\": \"Leandro Medrado Meireles\",\r\n    \"cpf\": \"12345678911\",\r\n    \"email\": \"teste@gmail.com\",\r\n    \"salario\":  3500.75\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/funcionarios",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"funcionarios"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 24 Jun 2025 19:32:16 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 3,\n    \"nome\": \"Leandro Medrado Meireles\",\n    \"cpf\": \"12345678911\",\n    \"email\": \"teste@gmail.com\",\n    \"salario\": 3500.75,\n    \"projetos\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "criar 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Marcos Medrado Meireles\",\r\n    \"cpf\": \"12345678912\",\r\n    \"email\": \"marcos@gmail.com\",\r\n    \"salario\":  3600.75\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/funcionarios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"funcionarios"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "ok",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nome\": \"Marcos Medrado Meireles\",\r\n    \"cpf\": \"12345678912\",\r\n    \"email\": \"marcos@gmail.com\",\r\n    \"salario\":  3600.75\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/funcionarios",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"funcionarios"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 24 Jun 2025 19:34:46 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 4,\n    \"nome\": \"Marcos Medrado Meireles\",\n    \"cpf\": \"12345678912\",\n    \"email\": \"marcos@gmail.com\",\n    \"salario\": 3600.75,\n    \"projetos\": []\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Projeto",
+			"item": [
+				{
+					"name": "listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/projetos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"projetos"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "ok",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/projetos",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"projetos"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 24 Jun 2025 19:38:46 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"nome\": \"Projeto Exemplo\",\n        \"dataCriacao\": \"2025-06-24\",\n        \"funcionarios\": [\n            {\n                \"id\": 3,\n                \"nome\": \"Leandro Medrado Meireles\",\n                \"cpf\": \"12345678911\",\n                \"email\": \"teste@gmail.com\",\n                \"salario\": 3500.75\n            },\n            {\n                \"id\": 4,\n                \"nome\": \"Marcos Medrado Meireles\",\n                \"cpf\": \"12345678912\",\n                \"email\": \"marcos@gmail.com\",\n                \"salario\": 3600.75\n            }\n        ]\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "criar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Projeto Exemplo\",\r\n    \"dataCriacao\": \"2025-06-24\",\r\n    \"funcionariosIds\": [\r\n        3,\r\n        4\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/projetos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"projetos"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "ok",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nome\": \"Projeto Exemplo\",\r\n    \"dataCriacao\": \"2025-06-24\",\r\n    \"funcionariosIds\": [\r\n        3,\r\n        4\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/projetos",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"projetos"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 24 Jun 2025 19:39:26 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 2,\n    \"nome\": \"Projeto Exemplo\",\n    \"dataCriacao\": \"2025-06-24\",\n    \"funcionarios\": [\n        {\n            \"id\": 3,\n            \"nome\": \"Leandro Medrado Meireles\",\n            \"cpf\": \"12345678911\",\n            \"email\": \"teste@gmail.com\",\n            \"salario\": 3500.75\n        },\n        {\n            \"id\": 4,\n            \"nome\": \"Marcos Medrado Meireles\",\n            \"cpf\": \"12345678912\",\n            \"email\": \"marcos@gmail.com\",\n            \"salario\": 3600.75\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
