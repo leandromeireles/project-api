@@ -16,7 +16,7 @@ API RESTful para cadastro de **Projetos** e **Funcionários**, com relacionament
 
 ## 🧰 Tecnologias utilizadas
 
-- Java 11
+- Java 17
 - Spring Boot
 - PostgreSQL
 - Docker (para o banco de dados)
